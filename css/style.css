@@ -191,3 +191,13 @@ p {
     width: 70%; }
     .division .container .title p {
       margin-top: 20px; }
+
+.feedback h2 {
+  text-align: center; }
+
+.feedback .swiper-container {
+  width: 70%;
+  height: 150px;
+  margin: 90px auto;
+  border: 3px solid #EF4379;
+  border-radius: 26px; }
