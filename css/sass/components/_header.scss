@@ -1,0 +1,35 @@
+header {
+    height: 85vh;
+    width: 100%;
+    position: relative;
+
+    .background {
+        img {
+            display: block;
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+        }
+    }
+
+    .title {
+        width: 30%;
+        margin-left: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        > p {
+            margin-top: 50px;
+        } 
+
+        .cta {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+}

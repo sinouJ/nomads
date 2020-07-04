@@ -1,0 +1,21 @@
+.btn {
+    border-radius: 100px;
+    background-color: #fff;
+    box-sizing: border-box;
+
+    p {
+        color: $red;
+        width: 100%;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    &.secondary {
+        background-color: $red;
+        border: 1px solid #fff;
+        
+        p {
+            color: #fff;
+        }
+    }
+}

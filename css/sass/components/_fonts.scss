@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Impact";
+    src: url("../assets/fonts/Impact.woff2") format("woff2"),
+         url("../assets/fonts/Impact.woff") format("woff"),
+         url("../assets/fonts/Impact.ttf") format("ttf");
+}
+
+h1 {
+    font-family: Impact;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+
+p {
+    font-family: Raleway;
+    color: white;
+}
