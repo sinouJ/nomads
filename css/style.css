@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 .container {
   width: 60%;
   margin: 0 auto; }
@@ -28,7 +29,8 @@ header {
     flex-direction: column;
     flex-wrap: wrap; }
     header .title > p {
-      margin-top: 50px; }
+      margin-top: 50px;
+      color: #fff; }
     header .title .cta {
       margin-top: 30px;
       display: flex;
@@ -48,9 +50,14 @@ h1 {
   letter-spacing: 4px;
   font-size: 40px; }
 
+h2 {
+  font-family: Impact;
+  color: #232323;
+  font-size: 22px; }
+
 p {
   font-family: Raleway;
-  color: white; }
+  color: #232323; }
 
 .btn {
   border-radius: 100px;
@@ -71,3 +78,62 @@ p {
     border: 1px solid #fff; }
     .btn.secondary p, .btn.secondary a {
       color: #fff; }
+
+.mockup {
+  display: flex;
+  align-items: center;
+  padding-top: 200px; }
+  .mockup > div {
+    width: 50%; }
+    .mockup > div:last-child {
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap; }
+    .mockup > div .iphone {
+      height: 600px;
+      width: 90%;
+      margin: 0 auto;
+      border-radius: 60px;
+      box-shadow: 0px 0px 42px 3px rgba(0, 0, 0, 0.15);
+      border: 1px solid #D2D2D2;
+      overflow: hidden; }
+    .mockup > div article {
+      width: 85%;
+      position: relative;
+      opacity: 0.5; }
+      .mockup > div article.active {
+        opacity: 1; }
+      .mockup > div article:not(:first-child) {
+        margin-top: 80px; }
+      .mockup > div article p {
+        margin-top: 20px; }
+      .mockup > div article:nth-child(1)::after {
+        content: "1";
+        font-family: Impact;
+        color: #EF473A;
+        font-size: 75px;
+        opacity: 0.3;
+        position: absolute;
+        left: -30px;
+        top: 50%;
+        transform: translateY(-50%); }
+      .mockup > div article:nth-child(2)::after {
+        content: "2";
+        font-family: Impact;
+        color: #EF473A;
+        font-size: 75px;
+        opacity: 0.3;
+        position: absolute;
+        left: -30px;
+        top: 50%;
+        transform: translateY(-50%); }
+      .mockup > div article:nth-child(3)::after {
+        content: "3";
+        font-family: Impact;
+        color: #EF473A;
+        font-size: 75px;
+        opacity: 0.3;
+        position: absolute;
+        left: -30px;
+        top: 50%;
+        transform: translateY(-50%); }

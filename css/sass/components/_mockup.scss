@@ -1,0 +1,59 @@
+.mockup {
+    display: flex;
+    align-items: center;
+    padding-top: 200px;
+
+    > div {
+        width: 50%;
+        
+        &:last-child {
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+        }
+
+        .iphone {
+            height: 600px;
+            width: 90%;
+            margin: 0 auto;
+            border-radius: 60px;
+            box-shadow: $shadow;
+            border: 1px solid $gray;
+            overflow: hidden;
+        }
+
+        article {
+            width: 85%;
+            position: relative;
+            opacity: 0.5;
+
+            &.active {
+                opacity: 1;
+            }
+            
+            &:not(:first-child) {
+                margin-top: 80px;
+            }
+
+            p {
+                margin-top: 20px;
+            }
+
+            @for $i from 1 to 4 {
+                &:nth-child(#{$i}) {
+                    &::after {
+                        content: '#{$i}';
+                        font-family: Impact;
+                        color: $red;
+                        font-size: 75px;
+                        opacity: 0.3;
+                        position: absolute;
+                        left: -30px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+}
