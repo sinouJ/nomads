@@ -2,19 +2,26 @@
     border-radius: 100px;
     background-color: #fff;
     box-sizing: border-box;
+    cursor: pointer;
 
-    p {
+    p, a {
         color: $red;
         width: 100%;
         text-align: center;
-        padding: 10px 20px;
+        padding: 10px 0;
+        text-decoration: none;
+        display: block;
+
+        &:visited {
+            color: #fff;
+        }
     }
 
     &.secondary {
-        background-color: $red;
+        background: $gradient;
         border: 1px solid #fff;
         
-        p {
+        p, a {
             color: #fff;
         }
     }

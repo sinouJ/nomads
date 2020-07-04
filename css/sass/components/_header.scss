@@ -9,6 +9,12 @@ header {
             width: 100%;
             position: absolute;
             z-index: -1;
+
+            &.illustration {
+                width: 15%;
+                left: 35%;
+                top: 20%;
+            }
         }
     }
 
@@ -30,6 +36,11 @@ header {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            align-items: center;
+
+            .btn {
+                width: 45%;
+            }
         }
     }
 }

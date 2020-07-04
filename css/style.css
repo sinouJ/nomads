@@ -1,1 +1,73 @@
-*{padding:0;margin:0}header{height:85vh;width:100%;position:relative}header .background img{display:block;width:100%;position:absolute;z-index:-1}header .title{width:30%;margin-left:20%;height:100%;display:flex;justify-content:center;flex-direction:column;flex-wrap:wrap}header .title>p{margin-top:50px}header .title .cta{margin-top:30px;display:flex;flex-wrap:wrap;justify-content:space-between}@font-face{font-family:"Impact";src:url("../assets/fonts/Impact.woff2") format("woff2"),url("../assets/fonts/Impact.woff") format("woff"),url("../assets/fonts/Impact.ttf") format("ttf")}h1{font-family:Impact;color:#fff;letter-spacing:4px;font-size:40px}p{font-family:Raleway;color:white}.btn{border-radius:100px;background-color:#fff;box-sizing:border-box}.btn p{color:#EF473A;width:100%;text-align:center;padding:10px 20px}.btn.secondary{background-color:#EF473A;border:1px solid #fff}.btn.secondary p{color:#fff}
+.container {
+  width: 60%;
+  margin: 0 auto; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+header {
+  height: 85vh;
+  width: 100%;
+  position: relative; }
+  header .background img {
+    display: block;
+    width: 100%;
+    position: absolute;
+    z-index: -1; }
+    header .background img.illustration {
+      width: 15%;
+      left: 35%;
+      top: 20%; }
+  header .title {
+    width: 30%;
+    margin-left: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    header .title > p {
+      margin-top: 50px; }
+    header .title .cta {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center; }
+      header .title .cta .btn {
+        width: 45%; }
+
+@font-face {
+  font-family: "Impact";
+  src: url("../assets/fonts/Impact.woff2") format("woff2"), url("../assets/fonts/Impact.woff") format("woff"), url("../assets/fonts/Impact.ttf") format("ttf"); }
+
+h1 {
+  font-family: Impact;
+  color: #fff;
+  letter-spacing: 4px;
+  font-size: 40px; }
+
+p {
+  font-family: Raleway;
+  color: white; }
+
+.btn {
+  border-radius: 100px;
+  background-color: #fff;
+  box-sizing: border-box;
+  cursor: pointer; }
+  .btn p, .btn a {
+    color: #EF473A;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    display: block; }
+    .btn p:visited, .btn a:visited {
+      color: #fff; }
+  .btn.secondary {
+    background: linear-gradient(90deg, #EF473A 0%, #EF4379 100%);
+    border: 1px solid #fff; }
+    .btn.secondary p, .btn.secondary a {
+      color: #fff; }

@@ -20,7 +20,7 @@ function css() {
     return gulp
         .src("./css/sass/**/*.scss")
         .pipe(sourcemaps.init())
-        .pipe(sass.sync({ outputStyle: 'compressed' }))
+        .pipe(sass())
         .pipe(gulp.dest("./css/"))
         .pipe(rename({
             suffix: ".min"
