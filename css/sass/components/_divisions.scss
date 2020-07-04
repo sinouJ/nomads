@@ -1,0 +1,28 @@
+.division {
+    height: 600px;
+    background: url(../assets/img/shape_division.png);
+    background-size: 50%;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    .container {
+        img {
+            position: absolute;
+            right: -80px;
+            top: 0;
+            width: 570px;
+        }
+    
+        .title {
+            width: 70%;
+
+            p {
+                margin-top: 20px;
+            }
+        }
+    }
+
+}

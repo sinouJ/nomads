@@ -1,0 +1,35 @@
+.coach {
+    position: relative;
+    height: 577px;
+    display: flex;
+    align-items: center;
+    background-image: url(../assets/img/shape_arrow.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    img {
+        width: 150px;
+        left: 10%;
+        top: 10%;
+        position: absolute;
+    }
+
+    div.wrapper {
+        width: 60%;
+        margin-left: 40%;
+
+        p {
+            margin-top: 20px;
+        }
+
+        .btn {
+            margin-top: 60px;
+            width: 220px;
+
+            p {
+                margin-top: 0;
+            }
+        }
+    }
+}
