@@ -540,3 +540,9 @@ footer {
           width: 30px; }
           footer .container .wrapper ul li img {
             width: 100%; }
+  @media screen and (max-width: 698px) {
+    footer .container {
+      flex-direction: column;
+      align-items: center; }
+      footer .container .wrapper {
+        width: 70%; } }

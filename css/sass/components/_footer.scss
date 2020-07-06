@@ -43,4 +43,15 @@ footer {
             }
         }
     }
+
+    @media screen and (max-width: $mobile) {
+        .container {
+            flex-direction: column;
+            align-items: center;
+
+            .wrapper {
+                width: 70%;
+            }
+        }
+    }
 }
