@@ -11,6 +11,11 @@ body {
 
     @media screen and (max-width: $tab){
         background-image: url(../assets/img/bg_mobile.png);
+        background-position-y: -30%;
+    }
+
+    @media screen and (max-width: $mobile){
+        background-position-y: 0;
     }
 }
 

@@ -20,7 +20,11 @@ body {
   background-position: top center; }
   @media screen and (max-width: 992px) {
     body {
-      background-image: url(../assets/img/bg_mobile.png); } }
+      background-image: url(../assets/img/bg_mobile.png);
+      background-position-y: -30%; } }
+  @media screen and (max-width: 698px) {
+    body {
+      background-position-y: 0; } }
 
 ul li {
   list-style: none; }
@@ -207,7 +211,7 @@ p {
         left: -30px;
         top: 50%;
         transform: translateY(-50%); }
-  @media screen and (max-width: 698px) {
+  @media screen and (max-width: 992px) {
     .mockup {
       flex-direction: column;
       padding-top: 40px;
@@ -228,9 +232,11 @@ p {
             display: flex;
             justify-content: center;
             align-items: center; }
-            .mockup > div.slider .swiper-slide article h2 {
-              position: relative;
-              z-index: 2; }
+            .mockup > div.slider .swiper-slide article {
+              width: 60%; }
+              .mockup > div.slider .swiper-slide article h2 {
+                position: relative;
+                z-index: 2; }
             .mockup > div.slider .swiper-slide .swiper-pagination {
               bottom: 20px;
               top: auto; }
@@ -264,6 +270,9 @@ p {
               left: 10px;
               top: 0%;
               transform: translateY(-50%); } }
+  @media screen and (max-width: 698px) {
+    .mockup > div .slider .swiper-slide article {
+      width: 85%; } }
 
 .coach {
   position: relative;
@@ -330,6 +339,28 @@ p {
     width: 70%; }
     .division .container .title p {
       margin-top: 20px; }
+  @media screen and (max-width: 992px) {
+    .division {
+      background-size: 60%;
+      background-position-y: 100%;
+      align-items: flex-start; }
+      .division .container img {
+        width: 420px;
+        bottom: 0;
+        top: auto; }
+      .division .container .title {
+        width: 100%;
+        padding-top: 80px; }
+        .division .container .title h2 {
+          text-align: center; }
+        .division .container .title p {
+          text-align: center; } }
+  @media screen and (max-width: 698px) {
+    .division {
+      background-position-y: 80%; }
+      .division .container img {
+        width: 320px;
+        bottom: 20%; } }
 
 .feedback {
   position: relative; }

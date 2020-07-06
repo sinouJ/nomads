@@ -63,7 +63,7 @@
         }
     }
 
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $tab) {
         flex-direction: column;
         padding-top: 40px;
         width: 100%;
@@ -90,6 +90,7 @@
                     align-items: center;
 
                     article {
+                        width: 60%;
                         
                         h2 {
                             position: relative;
@@ -118,6 +119,18 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $mobile) {
+        > div  {
+            .slider {
+                .swiper-slide {
+                    article {
+                        width: 85%;
                     }
                 }
             }

@@ -26,4 +26,40 @@
         }
     }
 
+    @media screen and (max-width: $tab) {
+        background-size: 60%;
+        background-position-y: 100%;
+        align-items: flex-start;
+
+        .container {
+
+            img {
+                width: 420px;
+                bottom: 0;
+                top: auto;
+            }
+
+            .title {
+                width: 100%;
+                padding-top: 80px;
+
+                h2 {
+                    text-align: center;
+                }
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:$mobile) {
+        background-position-y: 80%;
+
+        .container {
+            img {
+                width: 320px;
+                bottom: 20%;
+            }
+        }
+    }
 }
