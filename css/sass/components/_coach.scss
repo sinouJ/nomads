@@ -32,4 +32,36 @@
             }
         }
     }
+
+    @media screen and (max-width: $tab){
+        background-size: contain;
+        background-position-y: 90%;
+        align-items: flex-start;
+        padding-top: 80px;
+        height: 350px;
+
+        img {
+            width: 75px;
+            top: auto;
+            bottom: 5%;
+            left: 5%;
+        }
+
+        div.wrapper {
+            width: 100%;
+            margin-left: 0;
+
+            h2 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+
+            .btn {
+                margin: 60px auto 0;
+            }
+        }
+    }
 }

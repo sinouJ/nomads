@@ -5,7 +5,7 @@
   @media screen and (max-width: 992px) {
     .container {
       width: 80%; } }
-  @media screen and (max-width: 798px) {
+  @media screen and (max-width: 698px) {
     .container {
       width: 90%; } }
 
@@ -18,7 +18,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top center; }
-  @media screen and (max-width: 798px) {
+  @media screen and (max-width: 992px) {
     body {
       background-image: url(../assets/img/bg_mobile.png); } }
 
@@ -64,20 +64,20 @@ header {
       header .title .cta .btn {
         width: 45%;
         box-shadow: 0px 0px 42px 3px rgba(0, 0, 0, 0.15); }
-  @media screen and (max-width: 798px) {
+  @media screen and (max-width: 992px) {
     header .logo {
       width: 150px;
       left: 0;
       right: 0;
       margin: 0 auto; }
     header img.illustration {
-      width: 40%;
+      width: 20%;
       left: 0;
       right: 0;
       margin: 0 auto;
-      top: 50%; }
+      top: 40%; }
     header .title {
-      width: 90%;
+      width: 60%;
       margin: 0 auto;
       text-align: center;
       height: 100%;
@@ -87,13 +87,22 @@ header {
         margin-top: 150px; }
       header .title .cta {
         position: absolute;
-        bottom: 10px;
+        top: 60%;
         flex-direction: column;
         width: 100%; }
         header .title .cta .btn {
           width: 70%; }
           header .title .cta .btn:last-child {
             margin-top: 30px; } }
+  @media screen and (max-width: 698px) {
+    header img.illustration {
+      width: 40%;
+      top: 50%; }
+    header .title {
+      width: 90%; }
+      header .title .cta {
+        bottom: 10px;
+        top: auto; } }
 
 @font-face {
   font-family: "Impact";
@@ -198,7 +207,7 @@ p {
         left: -30px;
         top: 50%;
         transform: translateY(-50%); }
-  @media screen and (max-width: 798px) {
+  @media screen and (max-width: 698px) {
     .mockup {
       flex-direction: column;
       padding-top: 40px;
@@ -280,6 +289,27 @@ p {
       width: 220px; }
       .coach div.wrapper .btn p {
         margin-top: 0; }
+  @media screen and (max-width: 992px) {
+    .coach {
+      background-size: contain;
+      background-position-y: 90%;
+      align-items: flex-start;
+      padding-top: 80px;
+      height: 350px; }
+      .coach img {
+        width: 75px;
+        top: auto;
+        bottom: 5%;
+        left: 5%; }
+      .coach div.wrapper {
+        width: 100%;
+        margin-left: 0; }
+        .coach div.wrapper h2 {
+          text-align: center; }
+        .coach div.wrapper p {
+          text-align: center; }
+        .coach div.wrapper .btn {
+          margin: 60px auto 0; } }
 
 .division {
   height: 600px;

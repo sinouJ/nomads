@@ -9,7 +9,7 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
 
-    @media screen and (max-width: $mobile){
+    @media screen and (max-width: $tab){
         background-image: url(../assets/img/bg_mobile.png);
     }
 }
