@@ -8,6 +8,10 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
+
+    @media screen and (max-width: $mobile){
+        background-image: url(../assets/img/bg_mobile.png);
+    }
 }
 
 ul {

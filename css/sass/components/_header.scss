@@ -49,6 +49,54 @@ header {
 
             .btn {
                 width: 45%;
+                box-shadow: $shadow;
+            }
+        }
+    }
+
+    @media screen and (max-width: $mobile) {
+        .logo {
+            width: 150px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+
+        img {
+            &.illustration {
+                width: 40%;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                top: 50%
+            }
+        }
+
+        .title {
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            height: 100%;
+            position: relative;
+            justify-content: flex-start;
+
+            h1 {
+                margin-top: 150px;
+            }
+
+            .cta {
+                position: absolute;
+                bottom: 10px;
+                flex-direction: column;
+                width: 100%;
+
+                .btn {
+                    width: 70%;
+
+                    &:last-child {
+                        margin-top: 30px;
+                    }
+                }
             }
         }
     }
