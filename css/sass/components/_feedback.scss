@@ -33,6 +33,21 @@
                     width: calc(100% - 130px);
                     line-height: 1.5;
                     margin-left: 15px;
+
+                    .note {
+                        span {
+                            height: 10px;
+                            width: 10px;
+                            display: inline-block;
+                            box-sizing: border-box;
+                            border: 1px solid $pink;
+                            border-radius: 50%;
+
+                            &.active {
+                                background: $pink;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -63,6 +78,71 @@
                 left: 55%;
                 right: 0;
                 top: 150px;
+            }
+        }
+    }
+
+    @media screen and (max-width: $tab) {
+        .swiper-container {
+            width: 80%;
+        }
+
+        .quotes {
+            span {
+                &:last-child {
+                    right: -60%;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $mobile) {
+        .swiper-container {
+            height: 225px;
+            
+            .swiper-wrapper {
+                .swiper-slide {
+                    align-items: flex-start;
+
+                    .avi {
+                        display: block;
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                        margin-left: 0;
+                        width: 70px;
+                        height: 70px;
+                    }
+
+                    .comment {
+                        width: 100%;
+
+                        h3, .note {
+                            margin-left: 80px;
+                        }
+
+                        h3 {
+                            margin-top: 10px;
+                        }
+
+                        p {
+                            margin-top: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .quotes {
+            span {
+                &:first-child {
+                    top: 80px;
+                }
+
+                &:last-child {
+                    left: 95%;
+                    top: 174px;
+                }
             }
         }
     }

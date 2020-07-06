@@ -9,6 +9,11 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
+
+    @media screen and (max-width: $mobile) {
+        top: auto;
+        bottom: -15%;
+    }
 }
 
 .swiper-button-prev {
@@ -17,6 +22,13 @@
     &::after {
         background-image: url(../assets/pictos/arrow_prev.svg);
     }
+
+    @media screen and (max-width: $tab) {
+        left: 10%;
+    }
+    @media screen and (max-width: $mobile) {
+        left: 20%;
+    }
 }
 
 .swiper-button-next {
@@ -24,6 +36,14 @@
 
     &::after {
         background-image: url(../assets/pictos/arrow_next.svg);
+    }
+
+    @media screen and (max-width: $tab) {
+        right: 10%;
+    }
+
+    @media screen and (max-width: $mobile) {
+        right: 20%;
     }
 }
 

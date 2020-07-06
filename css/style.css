@@ -121,7 +121,16 @@ h1 {
 h2 {
   font-family: Impact;
   color: #232323;
-  font-size: 22px; }
+  font-size: 28px; }
+
+h3 {
+  font-family: Impact;
+  color: #EF4379;
+  font-size: 18px; }
+  h3 span {
+    font-family: Raleway;
+    color: #EF4379;
+    font-size: 12px; }
 
 p {
   font-family: Raleway;
@@ -387,6 +396,15 @@ p {
         width: calc(100% - 130px);
         line-height: 1.5;
         margin-left: 15px; }
+        .feedback .swiper-container .swiper-wrapper .swiper-slide .comment .note span {
+          height: 10px;
+          width: 10px;
+          display: inline-block;
+          box-sizing: border-box;
+          border: 1px solid #EF4379;
+          border-radius: 50%; }
+          .feedback .swiper-container .swiper-wrapper .swiper-slide .comment .note span.active {
+            background: #EF4379; }
   .feedback .quotes {
     position: absolute;
     margin: 0 auto;
@@ -408,6 +426,37 @@ p {
         left: 55%;
         right: 0;
         top: 150px; }
+  @media screen and (max-width: 992px) {
+    .feedback .swiper-container {
+      width: 80%; }
+    .feedback .quotes span:last-child {
+      right: -60%; } }
+  @media screen and (max-width: 698px) {
+    .feedback .swiper-container {
+      height: 225px; }
+      .feedback .swiper-container .swiper-wrapper .swiper-slide {
+        align-items: flex-start; }
+        .feedback .swiper-container .swiper-wrapper .swiper-slide .avi {
+          display: block;
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          margin-left: 0;
+          width: 70px;
+          height: 70px; }
+        .feedback .swiper-container .swiper-wrapper .swiper-slide .comment {
+          width: 100%; }
+          .feedback .swiper-container .swiper-wrapper .swiper-slide .comment h3, .feedback .swiper-container .swiper-wrapper .swiper-slide .comment .note {
+            margin-left: 80px; }
+          .feedback .swiper-container .swiper-wrapper .swiper-slide .comment h3 {
+            margin-top: 10px; }
+          .feedback .swiper-container .swiper-wrapper .swiper-slide .comment p {
+            margin-top: 40px; }
+    .feedback .quotes span:first-child {
+      top: 80px; }
+    .feedback .quotes span:last-child {
+      left: 95%;
+      top: 174px; } }
 
 .swiper-button-prev, .swiper-button-next {
   outline: none;
@@ -418,16 +467,32 @@ p {
     height: 100%;
     background-size: contain;
     background-repeat: no-repeat; }
+  @media screen and (max-width: 698px) {
+    .swiper-button-prev, .swiper-button-next {
+      top: auto;
+      bottom: -15%; } }
 
 .swiper-button-prev {
   left: 20%; }
   .swiper-button-prev::after {
     background-image: url(../assets/pictos/arrow_prev.svg); }
+  @media screen and (max-width: 992px) {
+    .swiper-button-prev {
+      left: 10%; } }
+  @media screen and (max-width: 698px) {
+    .swiper-button-prev {
+      left: 20%; } }
 
 .swiper-button-next {
   right: 20%; }
   .swiper-button-next::after {
     background-image: url(../assets/pictos/arrow_next.svg); }
+  @media screen and (max-width: 992px) {
+    .swiper-button-next {
+      right: 10%; } }
+  @media screen and (max-width: 698px) {
+    .swiper-button-next {
+      right: 20%; } }
 
 .swiper-pagination {
   bottom: -40px;
