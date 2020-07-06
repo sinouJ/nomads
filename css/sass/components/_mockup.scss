@@ -13,6 +13,10 @@
             flex-wrap: wrap;
         }
 
+        &.slider {
+            display: none;
+        }
+
         .iphone {
             height: 600px;
             width: 90%;
@@ -53,6 +57,67 @@
                         left: -30px;
                         top: 50%;
                         transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $mobile) {
+        flex-direction: column;
+        padding-top: 40px;
+        width: 100%;
+        
+        > div {
+            width: 100%;
+
+            &:last-child {
+                display: none;
+            }
+
+            &.slider {
+                display: block;
+                margin-top: -150px;
+                background-color: #fff;
+                box-shadow: $shadow;
+                height: 300px;
+                overflow: hidden;
+                position: relative;
+
+                .swiper-slide {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    article {
+                        
+                        h2 {
+                            position: relative;
+                            z-index: 2;
+                        }
+                    }
+
+                    .swiper-pagination {
+                        bottom: 20px;
+                        top: auto;
+                    }
+
+                    @for $i from 1 to 4 {
+                        &:nth-child(#{$i}) {
+                            article {
+                                &::after {
+                                    content: '#{$i}';
+                                    font-family: Impact;
+                                    color: $red;
+                                    font-size: 75px;
+                                    opacity: 0.3;
+                                    position: absolute;
+                                    left: 10px;
+                                    top: 0%;
+                                    transform: translateY(-50%);
+                                }
+                            }
+                        }
                     }
                 }
             }

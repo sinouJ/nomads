@@ -13,3 +13,15 @@ var swiper = new Swiper('.swiper-container', {
     },
     speed: 800
 })
+
+var slider = new Swiper ('.slider', {
+    loop: false,
+    autoplay: {
+        delay: 2000
+    },
+    speed: 800,
+    pagination: {
+        type: 'bullets',
+        el:'.swiper-pagination'
+    }
+})

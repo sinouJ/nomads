@@ -126,7 +126,8 @@ p {
     text-align: center;
     padding: 10px 0;
     text-decoration: none;
-    display: block; }
+    display: block;
+    font-family: Raleway; }
     .btn p:visited, .btn a:visited {
       color: #fff; }
   .btn.secondary {
@@ -146,6 +147,8 @@ p {
       display: flex;
       justify-content: flex-end;
       flex-wrap: wrap; }
+    .mockup > div.slider {
+      display: none; }
     .mockup > div .iphone {
       height: 600px;
       width: 90%;
@@ -195,6 +198,63 @@ p {
         left: -30px;
         top: 50%;
         transform: translateY(-50%); }
+  @media screen and (max-width: 798px) {
+    .mockup {
+      flex-direction: column;
+      padding-top: 40px;
+      width: 100%; }
+      .mockup > div {
+        width: 100%; }
+        .mockup > div:last-child {
+          display: none; }
+        .mockup > div.slider {
+          display: block;
+          margin-top: -150px;
+          background-color: #fff;
+          box-shadow: 0px 0px 42px 3px rgba(0, 0, 0, 0.15);
+          height: 300px;
+          overflow: hidden;
+          position: relative; }
+          .mockup > div.slider .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            .mockup > div.slider .swiper-slide article h2 {
+              position: relative;
+              z-index: 2; }
+            .mockup > div.slider .swiper-slide .swiper-pagination {
+              bottom: 20px;
+              top: auto; }
+            .mockup > div.slider .swiper-slide:nth-child(1) article::after {
+              content: "1";
+              font-family: Impact;
+              color: #EF473A;
+              font-size: 75px;
+              opacity: 0.3;
+              position: absolute;
+              left: 10px;
+              top: 0%;
+              transform: translateY(-50%); }
+            .mockup > div.slider .swiper-slide:nth-child(2) article::after {
+              content: "2";
+              font-family: Impact;
+              color: #EF473A;
+              font-size: 75px;
+              opacity: 0.3;
+              position: absolute;
+              left: 10px;
+              top: 0%;
+              transform: translateY(-50%); }
+            .mockup > div.slider .swiper-slide:nth-child(3) article::after {
+              content: "3";
+              font-family: Impact;
+              color: #EF473A;
+              font-size: 75px;
+              opacity: 0.3;
+              position: absolute;
+              left: 10px;
+              top: 0%;
+              transform: translateY(-50%); } }
 
 .coach {
   position: relative;
