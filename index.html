@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <title> | Nomads</title>
+    <meta name="description" content="Viens défier tes amis et le monde entier sur l'application Nomads. Retrouve la motivation de courir et de te dépenser grâce à une application de running innovante et une communauté active de runners">
+    <title>Dépense-toi en t'amusant et défie tes amis et le monde entier | Nomads</title>
     <link rel="stylesheet" href="assets/swiper/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -32,52 +32,49 @@
     <main>
         <section class="mockup container">
             <div>
-                <div class="iphone"></div>
+                <div class="iphone">
+                    <img data-id="1" class="active" src="./assets/img/mobile_1.jpg" alt="carte vue du ciel">
+                    <img data-id="2" src="./assets/img/mobile_2.jpg" alt="page profil">
+                    <img data-id="3" src="./assets/img/mobile_3.jpg" alt="page d'invitation à un duel">
+                </div>
             </div>
             <div class="slider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div data-slide="1" class="swiper-slide">
                         <article class="active">
                             <h2>Tu bouges, et ça se voit !</h2>
-                            <p>Nulla quis pellentesque quam. Praesent non accumsan lorem. Vivamus hendrerit interdum mi,
-                                sit
-                                amet blandit diam mollis ut.</p>
+                            <p>Plonge dans l'univers des nomads, recouvre ta ville et fait en ton terrain de jeu.</p>
                         </article>
                     </div>
-                    <div class="swiper-slide">
+                    <div data-slide="2" class="swiper-slide">
                         <article class="active">
-                            <h2>Un coach pour te motiver</h2>
-                            <p>Nulla quis pellentesque quam. Praesent non accumsan lorem. Vivamus hendrerit interdum mi,
-                                sit
-                                amet blandit diam mollis ut.</p>
+                            <h2>Un espace dédié pour toi</h2>
+                            <p>Dans ton espace perso, tu auras accès à toutes tes anciennes courses, tes cadeaux mais surtout à la personnalisation de
+                            ton mads. Grâce à la grande variété d'accessoires, tu pourras l'habiller à ton image.</p>
                         </article>
                     </div>
-                    <div class="swiper-slide">
+                    <div data-slide="3" class="swiper-slide">
                         <article class="active">
                             <h2>Sors, et défis tes potes</h2>
-                            <p>Nulla quis pellentesque quam. Praesent non accumsan lorem. Vivamus hendrerit interdum mi,
-                                sit
-                                amet blandit diam mollis ut.</p>
+                            <p>Défis tes amis autour de modes de jeux variés et tente de gagner des cadeaux chez nos partenaires.</p>
                         </article>
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-            <div>
-                <article class="active">
+            <div class="articles">
+                <article data-num="1" id="article_1" onmouseover="mockup(this)" class="active">
                     <h2>Tu bouges, et ça se voit !</h2>
-                    <p>Nulla quis pellentesque quam. Praesent non accumsan lorem. Vivamus hendrerit interdum mi, sit
-                        amet blandit diam mollis ut.</p>
+                    <p>Plonge dans l'univers des nomads, recouvre ta ville et fait en ton terrain de jeu.</p>
                 </article>
-                <article>
-                    <h2>Un coach pour te motiver</h2>
-                    <p>Nulla quis pellentesque quam. Praesent non accumsan lorem. Vivamus hendrerit interdum mi, sit
-                        amet blandit diam mollis ut.</p>
+                <article data-num="2" id="article_2" onmouseover="mockup(this)">
+                    <h2>Un espace dédié pour toi</h2>
+                    <p>Dans ton espace perso, tu auras accès à toutes tes anciennes courses, tes cadeaux mais surtout à la personnalisation de
+                    ton mads. Grâce à la grande variété d'accessoires, tu pourras l'habiller à ton image.</p>
                 </article>
-                <article>
+                <article data-num="3" id="article_3" onmouseover="mockup(this)">
                     <h2>Sors, et défis tes potes</h2>
-                    <p>Nulla quis pellentesque quam. Praesent non accumsan lorem. Vivamus hendrerit interdum mi, sit
-                        amet blandit diam mollis ut.</p>
+                    <p>Défis tes amis autour de modes de jeux variés et tente de gagner des cadeaux chez nos partenaires.</p>
                 </article>
             </div>
         </section>
@@ -85,13 +82,13 @@
             <img src="./assets/illustrations/stretching.svg" alt="personnage s'étirant">
             <div class="container">
                 <div class="wrapper">
-                    <h2>Le coach</h2>
+                    <h2>Un coach pour te motiver</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies nulla et luctus aliquam. Sed vitae
-                        eleifend mauris, vel facilisis sem. Maecenas lacinia tempus magna, et efficitur quam porta id. 
+                        Tu as toujours voulu à coach à tes côtés pour te motiver, ça tombe bien, il est enfin arrivé !
+                        Mad coach sera présent pour t'accompagner tout au long des parcours et te donne l'envie de te surpasser !
                     </p>
                     <div class="btn secondary">
-                        <p>Download</p>
+                        <p>Télécharger</p>
                     </div>
                 </div>
             </div>
@@ -100,10 +97,10 @@
             <div class="container">
                 <img src="./assets/illustrations/winning.svg" alt="personnage vainqueur avec trophée">
                 <div class="title">
-                    <h2>Rejoins TA divison</h2>
+                    <h2>Grimpe dans le classement et hisse-toi au sommet</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies nulla et luctus aliquam. Sed
-                        vitae eleifend mauris, vel facilisis sem.
+                        Prouve tes qualités de nomads et soit reconnu par les tiens pour tes efforts. Relève les challenges avec fun.
+                        Surpasse-toi et montes dans les divisions.
                     </p>
                 </div>
             </div>
@@ -115,29 +112,29 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="avi">
-                                <img src="./assets/img/profil.png" alt="portrait d'un homme">
+                                <img src="./assets/img/profil1.jpeg" alt="personnage nomads">
                             </div>
                             <div class="comment">
-                                <h3>Jeremy H. 33 <span>Paris 15e</span></h3>
+                                <h3>Jeremy H. 33 ans <span>Paris 15e</span></h3>
                                 <div class="note">
                                     <span class="active"></span>
                                     <span class="active"></span>
                                     <span class="active"></span>
-                                    <span class="active"></span>
+                                    <span></span>
                                     <span></span>
                                 </div>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies nulla et luctus
-                                    aliquam. Sed vitae eleifend mauris,
+                                    C'est top ! Moi qui n'étais pas fan du tout de la course, j'ai appris à aimer ça ! Je vais courir maintenant avec
+                                    plaisir. Courir est maintenant devenu un jeu d'enfant !
                                 </p>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="avi">
-                                <img src="./assets/img/profil.png" alt="portrait d'un homme">
+                                <img src="./assets/img/profil3.jpeg" alt="personnage nomads">
                             </div>
                             <div class="comment">
-                                <h3>Jeremy H. 33 <span>Paris 15e</span></h3>
+                                <h3>Guillaume G. 27 ans <span>Antony 92</span></h3>
                                 <div class="note">
                                     <span class="active"></span>
                                     <span class="active"></span>
@@ -146,9 +143,27 @@
                                     <span></span>
                                 </div>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies nulla et
-                                    luctus
-                                    aliquam. Sed vitae eleifend mauris,
+                                    Après 20 ans sans aucune activité sportive et du poids pris au fil du temps, j'ai débuté le jogging avec cette app. Je
+                                    suis heureux d'être un nomads et fière d'avoir perdu 10kg.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="avi">
+                                <img src="./assets/img/profil2.jpeg" alt="personnage nomads">
+                            </div>
+                            <div class="comment">
+                                <h3>Assa T. 32 ans <span>Paris 16e</span></h3>
+                                <div class="note">
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                </div>
+                                <p>
+                                    J'étais archi nulle en course et détestais le sport... Aujourd'hui, grâce aux défis nomads, j'ai un bien meilleur cardio
+                                    et une meilleur santé physique
                                 </p>
                             </div>
                         </div>

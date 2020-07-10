@@ -19,6 +19,7 @@
 
         .iphone {
             height: 600px;
+            max-width: 277px;
             width: 90%;
             margin: 0 auto;
             border-radius: 60px;
@@ -26,6 +27,19 @@
             border: 1px solid $gray;
             overflow: hidden;
             background-color: #fff;
+
+            img {
+                display: none;
+                height: 102%;
+                width: 102%;
+                margin-left: -1%;
+                margin-top: -1%;
+
+
+                &.active {
+                    display: block;
+                }
+            }
         }
 
         article {
